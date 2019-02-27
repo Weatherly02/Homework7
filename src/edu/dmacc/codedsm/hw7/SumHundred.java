@@ -10,13 +10,12 @@ public class SumHundred {
         priorResult = addThreeTogether(firstInput, secondInput, priorResult);
         System.out.println(priorResult);
 
-        int total = 0;
-        while (total < 100) {
-            total = addThreeTogether(firstInput, secondInput, total);
+        while (priorResult < 100) {
+            priorResult = addThreeTogether(firstInput, secondInput, priorResult);
             iterations++;
         }
-        System.out.println(total);
-        output(total, iterations);
+        System.out.println(priorResult);
+        output(priorResult, iterations);
 
     }
 
